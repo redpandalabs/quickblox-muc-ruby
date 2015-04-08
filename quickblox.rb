@@ -5,17 +5,12 @@ require 'uri'
 class QuickBlox
   QUICKBLOX_URL  = "https://api.quickblox.com/"
   
-  CREATE_DIALOG = QUICKBLOX_URL + "chat/Dialog"
-  ACCOUNT_SETTINGS = QUICKBLOX_URL + "account_settings"
-  START_SESSION = QUICKBLOX_URL + 'session'
-  LOGIN = QUICKBLOX_URL + 'login'
-  
   def initialize(type='json')
     configs
     @type = type
     @token = nil
     @token_type = nil
-    @headers = {'QuickBlox-REST-API-Version' => '0.1.1'}#, 'QB-Token' => @token_type}
+    @headers = {'QuickBlox-REST-API-Version' => '0.1.1'}
   end
 
   def type
