@@ -1,0 +1,6 @@
+quickblox:
+  application_id: 1231
+  auth_key: PsaASDWasfEasa
+  auth_secret: ASAwasFEA-sasda
+  server: api.quickblox.com
+  user_owner_id: 543
